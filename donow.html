@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PGHOME</title>
+    <link rel="stylesheet" href="css/now1.css">
+
+    <!-- bootstrap link -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
+    <!-- end of bootstrap link  -->
+
+    <!-- bootstrap icons link -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <!-- end of bootstrap links -->
+
+</head>
+
+<body>
+
+    <!-- starting navbar -->
+
+    <nav class="navbar bg-light sticky-top navbar-expand-lg ">
+        <div class="container-fluid">
+            <a href="#" class="nav-brand pb-2">
+                <img src="img/DO1.png" alt="pglogo" width="90px">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#contentsnav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="contentsnav">
+                <ul class="navbar-nav text-center ms-auto">
+                    <li class="nav-item hint">
+                        <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#forsignup"><i
+                                class="bi bi-person-fill p-1"></i>SIGN UP</a>
+                    </li>
+
+                    <div class="nav-vl"></div>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#forlogin"><i
+                                class="bi bi-box-arrow-in-right p-1"></i>LOGIN</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- end of navbar -->
+
+    <!-- content -->
+
+    <!-- banner -->
+
+    <div class="herobanner">
+
+
+        <div>
+            <h3 class="text-white">DONOW</h3>
+            <form class="mt-4 bannerinput ">
+                <div class="input-group city-search">
+
+                    <input type="text" class="form-control text-center" placeholder="Enter city to search "
+                        aria-label="Username" aria-describedby="addon-wrapping">
+                    <button class="btn btn-dark ">
+                        <a href="location.html" class="tight">search</i></a>
+                    </button>
+                </div>
+            </form>
+
+        </div>
+
+    </div>
+
+    <!-- end of banner -->
+
+    <div class="piggy">
+        <div class="container">
+            <h2>MAJOR CITIES</h2>
+
+
+            <div class="row">
+
+                <div class="col-md ">
+                    <a href="starpginner.html">
+                        <div class="city-border">
+                            <img src="img/bangalore.png" alt="bangaloresite" class="city-img">
+                        </div>
+                    </a>
+
+                </div>
+
+                <div class="col-md">
+                    <a href="starpginner.html">
+                        <div class="city-border ">
+                            <img src="img/chennai.png" alt="chennaisite" class="city-img">
+
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-md">
+                    <a href="starpginner.html">
+                        <div class="city-border">
+                            <img src="img/mumbai.png" alt="mumbaisite" class="city-img">
+                        </div>
+                    </a>
+
+                </div>
+
+                <div class="col-md">
+                    <a href="starpginner.html">
+                        <div class="city-border">
+                            <img src="img/delhi.png" alt="delhisite" class="city-img">
+                        </div>
+                    </a>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div>
+
+        <!-- signup modal -->
+
+        <div class="modal fade" id="forsignup">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header bg-light">
+                        <h5 class="modal-title">SIGN UP</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"  ></button>
+
+                    </div>
+
+                    <div class="modal-body">
+                        <form class="row">
+
+                            <div class="col-12 mt-1">
+                                <label for="forusername" class="visually-hidden">NAME</label>
+                                <div class="input-group ">
+                                    <div class="input-group-text"><i class="bi bi-person-fill "></i></div>
+                                    <input type="text" class="form-control" id="forusername" placeholder="Username"
+                                        required>
+                                </div>
+                            </div>
+
+                            <div class="col-12  mt-1">
+                                <label for="forphone" class="visually-hidden">phone</label>
+                                <div class="input-group ">
+                                    <div class="input-group-text"><i class="bi bi-telephone-fill"></i></div>
+                                    <input type="text" class="form-control" id="forphone" placeholder="Phone Number"
+                                        maxlength="10" minlength="10" required>
+                                </div>
+                            </div>
+
+                            <div class="col-12  mt-1">
+                                <label for="foremail" class="visually-hidden">email</label>
+                                <div class="input-group ">
+                                    <div class="input-group-text"><i class="bi bi-envelope-fill"></i></div>
+                                    <input type="email" class="form-control" id="foremail" placeholder="EMAIL" required>
+                                </div>
+                            </div>
+
+
+                            <div class="col-12  mt-1">
+                                <label for="forsignuppassword" class="visually-hidden">password</label>
+                                <div class="input-group ">
+                                    <div class="input-group-text"><i class="bi bi-lock-fill"></i></div>
+                                    <input type="password" class="form-control" id="forsignuppassword"
+                                        placeholder="PASSWORD" required>
+                                </div>
+                            </div>
+
+
+                            <div class="col-12  mt-1" >
+                                <label for="forcollage" class="visually-hidden">collage</label>
+                                <div class="input-group ">
+                                    <div class="input-group-text"><i class="bi bi-building-fill"></i></div>
+                                    <input type="text" class="form-control" id="forcollage" placeholder="Collage Name"
+                                        required>
+                                </div>
+                            </div>
+
+                           <div class="form-group make mt-1">
+                            <span>I'm a</span>
+                            <input type="radio" class="mx-1" id="gender-male" name="gender" value="male">"MALE"
+                            <label for="gender-male"></label> 
+
+                            <input type="radio" class="mx-1" id="gender-female" name="gender" value="female">"FEMALE"
+                            <label for="gender-female"></label> 
+                           </div>
+
+
+                          <div class="d-grid mt-1">
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                            
+                          </div>
+
+                          <hr>
+
+                          <div class="mt-1">
+                            Already have an account?<a class="already" href="#" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#forlogin">login</a>
+                          </div>
+
+
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- end of signup modal -->
+
+
+
+        <!-- login modal -->
+
+        <div class="modal fade " id="forlogin">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title " id="formodalone">LOGIN PAGE</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+
+                    <div class="modal-body">
+                        <form class=row>
+                            <div class="col-12">
+                                <label for="forname" class="visually-hidden">NAME</label>
+                                <div class="input-group ">
+                                    <div class="input-group-text"><i class="bi bi-person-fill "></i></div>
+                                    <input type="text" class="form-control" id="forname"  placeholder="Username" required>
+                                </div>
+                            </div>
+
+                            <div class="col-12 mt-2">
+                                <label for="foremail" class="visually-hidden">EMAIL</label>
+                                <div class="input-group">
+                                    <div class="input-group-text"><i class="bi bi-lock-fill"></i></div>
+                                    <input type="password" class="form-control" id="foremail"  placeholder="Password" required >
+                                </div>
+                            </div>
+
+                            <div class="modal-footer bg-light">
+                                <button type="submit" class="btn btn-primary"  >Submit</button>
+                            </div>
+                            
+
+
+
+                        </form>
+
+                    </div>
+
+                   
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- end of login modal -->
+
+
+
+        <!-- end of content -->
+
+
+        <footer>
+            <div class="container">
+                <ul class="text-white row d-flex justify-content-center ">
+                   
+                   
+                    <li class="col-md-1"><a href="starpginner.html"><i class="bi bi-instagram"></i></a></li>
+                    <li class="col-md-1"><a href="starpginner.html"></a><i class="bi bi-twitter"></i></li>
+                    <li class="col-md-1"><a href="starpginner.html"></a><i class="bi bi-facebook"></i></li>
+                    <li class="col-md-1"><a href="starpginner.html"></a><i class="bi bi-discord"></i></li>
+  
+                
+                </ul>
+            </div>
+            <div>
+                <p class="text-white">@Copyright</p>
+            </div>
+        </footer>
+
+
+
+</body>
+
+</html>
